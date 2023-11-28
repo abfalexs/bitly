@@ -41,10 +41,10 @@ def main():
     args = parser.parse_args()
 
     parse_link = urlparse(args.link)
-    mybitlink = f"{parse_link.netloc}{parse_link.path}"
+    bitlink = f"{parse_link.netloc}{parse_link.path}"
     try:
-        if is_bitlink(headers, mybitlink):
-            print(count_clicks(headers, mybitlink))
+        if is_bitlink(headers, bitlink):
+            print(count_clicks(headers, bitlink))
         else:
             print(shorten_link(headers, args.link))
     except HTTPError as e:
