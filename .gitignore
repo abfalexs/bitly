@@ -1,5 +1,5 @@
 .idea/
-.__pycache__/
 .pythonlibs/
-.gitattributes/
+__pycache__/
+.gitattributes
 .env
